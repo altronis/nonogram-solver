@@ -203,5 +203,15 @@ if __name__ == '__main__':
 
     print(f'Board size: {num_rows} X {num_cols}')
     print(f'Runtime: {runtime} seconds')
-    print(f'Solution is correct: {np.array_equal(solution[0], board_solution)}')
+
+    print('\nRow clues:')
+    for clue in row_clues:
+        print(clue)
+
+    print('\nColumn clues:')
+    for clue in col_clues:
+        print(clue)
+
+    np.set_printoptions(linewidth=300)
+    print()
     print(solution[0])
